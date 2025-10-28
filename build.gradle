@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.my_example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
+
+    implementation 'org.testng:testng:7.11.0'
+
+    implementation 'net.datafaker:datafaker:2.5.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-gradle
+    //implementation("io.qameta.allure:allure-gradle:2.8.1")
+
+    implementation 'ch.qos.logback:logback-classic:1.5.18'
+
+    implementation 'io.rest-assured:rest-assured:4.5.1'
+    //https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    implementation("io.rest-assured:json-schema-validator:3.0.0")
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+}
+
+test {
+    useTestNG()
+}
