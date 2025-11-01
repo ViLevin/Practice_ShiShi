@@ -1,4 +1,4 @@
-package pages.ru_pages;
+package pages.en_pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,13 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import pages.BasePage;
 
-public class RuAboutUsPage extends BasePage {
-
-    public RuAboutUsPage(WebDriver driver){
+public class EnAboutUsPage extends BasePage {
+    public EnAboutUsPage(WebDriver driver){
         setDriver(driver);
-        driver.get("https://shishi.co.il/");
         PageFactory.initElements(
                 new AjaxElementLocatorFactory(driver, 20), this);
     }
+
 
 }

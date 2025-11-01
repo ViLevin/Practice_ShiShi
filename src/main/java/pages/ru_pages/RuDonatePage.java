@@ -1,15 +1,13 @@
 package pages.ru_pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import pages.BasePage;
 
-public class RuAboutUsPage extends BasePage {
+public class RuDonatePage extends BasePage {
 
-    public RuAboutUsPage(WebDriver driver){
+    public RuDonatePage(WebDriver driver){
         setDriver(driver);
         driver.get("https://shishi.co.il/");
         PageFactory.initElements(

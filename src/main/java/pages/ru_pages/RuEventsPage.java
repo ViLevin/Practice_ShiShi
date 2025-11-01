@@ -10,11 +10,9 @@ import pages.BasePage;
 public class RuEventsPage extends BasePage {
     public RuEventsPage(WebDriver driver){
         setDriver(driver);
-        driver.get("https://shishi.co.il/");
         PageFactory.initElements(
                 new AjaxElementLocatorFactory(driver, 20), this);
     }
 
-    @FindBy(xpath = "//a[@href='https://www.jgive.com/new/en/usd/donation-targets/64189']")
-    WebElement btnDonateHeader;
+
 }
